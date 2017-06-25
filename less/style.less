@@ -740,3 +740,48 @@ textarea {
 		}
 	}
 }
+
+/**
+ * Landing page styles classes
+ * -------------------------------------------------------------------------------------------------
+ */
+.page-template-landing {
+	.site-header, .site-footer {
+		display: none;
+	}
+}
+
+ /**
+  * Misc styles classes
+  * ------------------------------------------------------------------------------------------------
+  */
+.bonus {
+	background-color: #fefe91;
+	padding: @base-line-height;
+}
+
+.nf-form-cont {
+	background-color: @alt-bg-color;
+	padding: @base-line-height * 1.5;
+
+	.nf-before-form-content, .nf-form-title, .nf-after-form-content {
+		.screen-reader-text;
+	}
+
+	.submit-container {
+		margin-bottom: 0 !important;
+	}
+
+	input, select, textarea {
+		border-color: white;
+	}
+
+	input[type=button], input[type=submit] {
+		border-color: @accent-color;
+		width: 100% !important;
+	}
+
+	.page-template-landing & {
+		background-color: #fefe91;
+	}
+}
