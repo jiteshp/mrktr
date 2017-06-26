@@ -717,7 +717,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', serif;
+  font-family: 'PT Serif', serif;
   font-weight: bold;
 }
 .h1,
@@ -1199,7 +1199,7 @@ textarea {
   top: 0;
 }
 .comment-meta .fn {
-  font-family: 'Merriweather', serif;
+  font-family: 'PT Serif', serif;
   font-weight: bold;
 }
 .comment-meta .fn a {
@@ -1299,6 +1299,29 @@ textarea {
 .page-template-landing .site-header,
 .page-template-landing .site-footer {
   display: none;
+}
+/**
+  * 404 styles classes
+  * ------------------------------------------------------------------------------------------------
+  */
+.error404 .search-form:before,
+.error404 .search-form:after {
+  content: '';
+  display: table;
+}
+.error404 .search-form:after {
+  clear: both;
+}
+.error404 .search-form input[type=search] {
+  float: left;
+  width: 70%;
+}
+.error404 .search-form input[type=submit] {
+  float: right;
+  width: 28%;
+}
+.error404 .nothing-found {
+  margin-bottom: 120px;
 }
 /**
   * Misc styles classes

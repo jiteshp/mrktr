@@ -3,7 +3,7 @@
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
-				<main id="site-main" class="main col-xs-12 col-md-8" role="main">
+				<main id="site-main" class="main col-xs-12 col-md-8 col-md-offset-2" role="main">
 					<section class="nothing-found hentry">
 						<header class="entry-header">
 							<h1 class="entry-title"><?php esc_html_e( 'Page not found', 'mrktr' ); ?></h1>
@@ -16,8 +16,6 @@
 						</div>
 					</section>
 				</main>
-
-				<?php get_sidebar(); ?>
 			</div>
 		</div>
 	</div>

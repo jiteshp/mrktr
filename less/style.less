@@ -40,7 +40,7 @@
  * -------------------------------------------------------------------------------------------------
  */
 @code-font: 				'Inconsolata', monospace;
-@heading-font: 				'Merriweather', serif;
+@heading-font: 				'PT Serif', serif;
 @icon-font: 				'Dashicons', serif;
 @text-font: 				'Lato', sans-serif;
 
@@ -748,6 +748,37 @@ textarea {
 .page-template-landing {
 	.site-header, .site-footer {
 		display: none;
+	}
+}
+
+ /**
+  * 404 styles classes
+  * ------------------------------------------------------------------------------------------------
+  */
+.error404 {
+	.search-form {
+		&:before, &:after {
+			content: '';
+			display: table;
+		}
+
+		&:after {
+			clear: both;
+		}
+
+		input[type=search] {
+			float: left;
+			width: 70%;
+		}
+
+		input[type=submit] {
+			float: right;
+			width: 28%;
+		}
+	}
+
+	.nothing-found {
+		margin-bottom: @base-line-height * 4;
 	}
 }
 
