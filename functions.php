@@ -91,13 +91,13 @@ add_action( 'widgets_init', 'mrktr_widget_areas' );
  * @since 1.0.0
  */
 function mrktr_assets() {
-	wp_enqueue_style( 'marketer-fonts', 'https://fonts.googleapis.com/css?family=PT+Serif:700|Lato:400,400i,700,700i|Inconsolata' );
-	wp_enqueue_style( 'marketer-style', get_stylesheet_uri(), array( 'marketer-fonts', 'dashicons' ) );
+	wp_enqueue_style( 'mrktr-fonts', 'https://fonts.googleapis.com/css?family=PT+Serif:700|Lato:400,400i,700,700i|Inconsolata' );
+	wp_enqueue_style( 'mrktr-style', get_stylesheet_uri(), array( 'marketer-fonts', 'dashicons' ), null );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	wp_enqueue_script( 'marketer-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), null, true );
+	wp_enqueue_script( 'mrktr-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'mrktr_assets' );
