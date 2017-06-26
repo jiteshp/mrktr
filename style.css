@@ -810,7 +810,7 @@ dl dt {
   font-weight: bold;
 }
 dl dd {
-  padding-left: 45px;
+  padding-left: 60px;
 }
 hr {
   border: 0;
@@ -844,7 +844,7 @@ h6 {
 }
 ol,
 ul {
-  padding-left: 30px;
+  padding-left: 60px;
 }
 ol {
   list-style: decimal;
